@@ -16,10 +16,15 @@
 
 <script type="text/babel">
     class App extends React.Component {
+        state = {
+        name: 'Mel',
+        age: 25
+        }
         render() {
             return (
                 <div className="app-content">
                 <h1>Hello CareerDevs</h1>
+                <p>My name is: { this.state.name }0 and I am { this.state.age }</p>
                 </div>
                 )
         }
